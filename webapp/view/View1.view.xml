@@ -1,0 +1,72 @@
+<mvc:View controllerName="idODATA.odataproject1.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table id="idProducts" width="auto" inset="true"
+             items="{
+            path : 'oModel1>/results' }">
+                <columns>
+                    <Column>
+                        <Text text="CustomerID" />
+                    </Column>
+
+                    <Column>
+                        <Text text="CompanyName" />
+                    </Column>
+
+                    <Column>
+                        <Text text=" ContactName" />
+                    </Column>
+
+                    <Column>
+                        <Text text="ContactTitle" />
+                    </Column>
+
+                    <Column>
+                        <Text text="Address" />
+                    </Column>
+
+                    <Column>
+                        <Text text="City" />
+                    </Column>
+
+                    <Column>
+                        <Text text="Region" />
+                    </Column>
+
+                    <Column>
+                        <Text text=" PostalCode" />
+                    </Column>
+
+                    <Column>
+                        <Text text="Country" />
+                    </Column>
+
+                    <Column>
+                        <Text text="Phone" />
+                    </Column>
+
+                    <Column>
+                        <Text text="Fax" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem type="Active" id="colss" press="onPress">
+                        <cells>
+                            <Text text="{oModel1>CustomerID}" />
+                            <Text text="{oModel1>CompanyName}" />
+                            <Text text="{oModel1>ContactName}" />
+                            <Text text="{oModel1>ContactTitle}" />
+                            <Text text="{oModel1>Address}" />
+                            <Text text="{oModel1>City}" />
+                            <Text text="{oModel1>Region}" />
+                            <Text text="{oModel1>PostalCode}" />
+                            <Text text="{oModel1>Country}" />
+                            <Text text="{oModel1>Phone}" />
+                            <Text text="{oModel1>Fax}" />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>
